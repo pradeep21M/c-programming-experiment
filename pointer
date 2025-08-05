@@ -1,1 +1,40 @@
+length of the string using pointers
+#include <stdio.h>
+#define MAX_SIZE 100 // Maximum size of the string
 
+int main()
+{
+    char text[MAX_SIZE]; /* Declares a string of size 100 */
+    char * str = text; /* Declare pointer that points to text */
+    int count = 0;
+
+    /* Input string from user */
+    printf("Enter any string: ");
+    scanf("%s",text);
+
+    /* Iterate though last element of the string */
+    while(*(str++) != '\0') count++;
+
+    printf("Length of '%s' = %d", text, count);
+
+    return 0;
+}
+------------------------------------------------------------------------
+adding two number using pointer
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, sum;
+    int *ptr1, *ptr2;
+
+    ptr1 = &num1; // ptr1 stores the address of num1
+    ptr2 = &num2; // ptr2 stores the address of num2
+
+    printf("Enter any two numbers: ");
+    scanf("%d%d", ptr1, ptr2);
+    sum = *ptr1 + *ptr2;
+    printf("Sum = %d", sum);
+    return 0;
+}
+-------------------------------------------------------------------------------

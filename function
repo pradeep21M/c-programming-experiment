@@ -1,4 +1,4 @@
-Sorting array elements using Function
+1) Sorting array elements using Function
 -------------------------------------
 #include<stdio.h>
 #include<stdlib.h>
@@ -27,7 +27,7 @@ int main()
   return 0;
 }
 -------------------------------------------------------------
-GCD using function
+2) GCD using function
 #include<stdio.h>
  int GCD(int x,int y) // 20 40
  {
@@ -49,7 +49,7 @@ GCD using function
    return 0;
  }
 ------------------------------------------------------------------
-odd and even number
+3) odd and even number
 #include <stdio.h>
 void printEvenNumbers(int n);// return_type fun_name(data type par1);
 void printOddNumbers(int n);

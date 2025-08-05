@@ -1,4 +1,4 @@
-multiplication
+1) multiplication
 int main(){  
 //Matrix Multiplication
 int a[10][10],b[10][10],mul[10][10],r,c,i,j,k;    
@@ -48,7 +48,7 @@ printf("\n");
 return 0;  
 }
 ---------------------------------------------------------------
-largest and smallest number in two dimension arrays
+2) largest and smallest number in two dimension arrays
 #include <stdio.h>
 int main()
 {

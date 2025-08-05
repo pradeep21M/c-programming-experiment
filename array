@@ -1,4 +1,4 @@
-linear search
+1) linear search
 #include<stdio.h>
 int main()
 {
@@ -22,7 +22,7 @@ int main()
     return 0;
 }
 -------------------------------------------------------------------------
-tranpose of array
+2) tranpose of array
 #include <stdio.h>
 int main()
 {
@@ -44,7 +44,7 @@ int main()
     return 0;
 }
 ------------------------------------------------------------------------------------
-second smallest and second largest element
+3) second smallest and second largest element
 #include <stdio.h>
 int main()
 {
@@ -70,12 +70,10 @@ int main()
     return 0;
 }
 ----------------------------------------------------------------------------------------------
-counting the odd and even number
+4) counting the odd and even number
 #include <stdio.h>
 int main()
 {
-//12.	Write a program to count the
-   // number of even and odd elements in an array.
    int N;
    scanf("%d",&N);
    int a[N];
@@ -92,7 +90,7 @@ int main()
     return 0;
 }
 --------------------------------------------------------------------------------------------------
-delete element
+5) delete element
 #include <stdio.h>
 int main()
 {
@@ -118,7 +116,7 @@ int main()
     return 0;
 }
 ------------------------------------------------------------------------------------------------
-insert a element in specific position
+6) insert a element in specific position
 #include <stdio.h>
 int main()
 {
@@ -147,3 +145,25 @@ int main()
     return 0;
 }
 -------------------------------------------------------------------------
+7) reverse array without using extra array
+#include <stdio.h>
+int main()
+{
+   int N;
+   scanf("%d",&N);
+   int a[N];
+   for(int i=0;i<N;i++)
+       scanf("%d",&a[i]);   // 10 20 30 40 50
+   int i=0,j=N-1;
+   for(i=0;i<j;i++){
+    int temp=a[i];
+    a[i]=a[j];
+    a[j]=temp;
+    j--;
+   }
+   printf("Elements are:");
+   for(int i=0;i<N;i++)
+    printf("%d ",a[i]);
+    return 0;
+}
+--------------------------------------------------------------------------------
